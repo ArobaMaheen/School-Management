@@ -1,0 +1,480 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{17E288E1-9792-48B0-8D46-CD629104B741}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>school</RootNamespace>
+    <AssemblyName>school</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\animate.css-master\.gitignore" />
+    <Content Include="assets\animate.css-master\animate.css" />
+    <Content Include="assets\animate.css-master\animate.min.css" />
+    <Content Include="assets\animate.css-master\gulpfile.js" />
+    <Content Include="assets\animate.css-master\source\attention_seekers\bounce.css" />
+    <Content Include="assets\animate.css-master\source\attention_seekers\flash.css" />
+    <Content Include="assets\animate.css-master\source\attention_seekers\headShake.css" />
+    <Content Include="assets\animate.css-master\source\attention_seekers\jello.css" />
+    <Content Include="assets\animate.css-master\source\attention_seekers\pulse.css" />
+    <Content Include="assets\animate.css-master\source\attention_seekers\rubberBand.css" />
+    <Content Include="assets\animate.css-master\source\attention_seekers\shake.css" />
+    <Content Include="assets\animate.css-master\source\attention_seekers\swing.css" />
+    <Content Include="assets\animate.css-master\source\attention_seekers\tada.css" />
+    <Content Include="assets\animate.css-master\source\attention_seekers\wobble.css" />
+    <Content Include="assets\animate.css-master\source\bouncing_entrances\bounceIn.css" />
+    <Content Include="assets\animate.css-master\source\bouncing_entrances\bounceInDown.css" />
+    <Content Include="assets\animate.css-master\source\bouncing_entrances\bounceInLeft.css" />
+    <Content Include="assets\animate.css-master\source\bouncing_entrances\bounceInRight.css" />
+    <Content Include="assets\animate.css-master\source\bouncing_entrances\bounceInUp.css" />
+    <Content Include="assets\animate.css-master\source\bouncing_exits\bounceOut.css" />
+    <Content Include="assets\animate.css-master\source\bouncing_exits\bounceOutDown.css" />
+    <Content Include="assets\animate.css-master\source\bouncing_exits\bounceOutLeft.css" />
+    <Content Include="assets\animate.css-master\source\bouncing_exits\bounceOutRight.css" />
+    <Content Include="assets\animate.css-master\source\bouncing_exits\bounceOutUp.css" />
+    <Content Include="assets\animate.css-master\source\fading_entrances\fadeIn.css" />
+    <Content Include="assets\animate.css-master\source\fading_entrances\fadeInDown.css" />
+    <Content Include="assets\animate.css-master\source\fading_entrances\fadeInDownBig.css" />
+    <Content Include="assets\animate.css-master\source\fading_entrances\fadeInLeft.css" />
+    <Content Include="assets\animate.css-master\source\fading_entrances\fadeInLeftBig.css" />
+    <Content Include="assets\animate.css-master\source\fading_entrances\fadeInRight.css" />
+    <Content Include="assets\animate.css-master\source\fading_entrances\fadeInRightBig.css" />
+    <Content Include="assets\animate.css-master\source\fading_entrances\fadeInUp.css" />
+    <Content Include="assets\animate.css-master\source\fading_entrances\fadeInUpBig.css" />
+    <Content Include="assets\animate.css-master\source\fading_exits\fadeOut.css" />
+    <Content Include="assets\animate.css-master\source\fading_exits\fadeOutDown.css" />
+    <Content Include="assets\animate.css-master\source\fading_exits\fadeOutDownBig.css" />
+    <Content Include="assets\animate.css-master\source\fading_exits\fadeOutLeft.css" />
+    <Content Include="assets\animate.css-master\source\fading_exits\fadeOutLeftBig.css" />
+    <Content Include="assets\animate.css-master\source\fading_exits\fadeOutRight.css" />
+    <Content Include="assets\animate.css-master\source\fading_exits\fadeOutRightBig.css" />
+    <Content Include="assets\animate.css-master\source\fading_exits\fadeOutUp.css" />
+    <Content Include="assets\animate.css-master\source\fading_exits\fadeOutUpBig.css" />
+    <Content Include="assets\animate.css-master\source\flippers\flip.css" />
+    <Content Include="assets\animate.css-master\source\flippers\flipInX.css" />
+    <Content Include="assets\animate.css-master\source\flippers\flipInY.css" />
+    <Content Include="assets\animate.css-master\source\flippers\flipOutX.css" />
+    <Content Include="assets\animate.css-master\source\flippers\flipOutY.css" />
+    <Content Include="assets\animate.css-master\source\lightspeed\lightSpeedIn.css" />
+    <Content Include="assets\animate.css-master\source\lightspeed\lightSpeedOut.css" />
+    <Content Include="assets\animate.css-master\source\rotating_entrances\rotateIn.css" />
+    <Content Include="assets\animate.css-master\source\rotating_entrances\rotateInDownLeft.css" />
+    <Content Include="assets\animate.css-master\source\rotating_entrances\rotateInDownRight.css" />
+    <Content Include="assets\animate.css-master\source\rotating_entrances\rotateInUpLeft.css" />
+    <Content Include="assets\animate.css-master\source\rotating_entrances\rotateInUpRight.css" />
+    <Content Include="assets\animate.css-master\source\rotating_exits\rotateOut.css" />
+    <Content Include="assets\animate.css-master\source\rotating_exits\rotateOutDownLeft.css" />
+    <Content Include="assets\animate.css-master\source\rotating_exits\rotateOutDownRight.css" />
+    <Content Include="assets\animate.css-master\source\rotating_exits\rotateOutUpLeft.css" />
+    <Content Include="assets\animate.css-master\source\rotating_exits\rotateOutUpRight.css" />
+    <Content Include="assets\animate.css-master\source\sliding_entrances\slideInDown.css" />
+    <Content Include="assets\animate.css-master\source\sliding_entrances\slideInLeft.css" />
+    <Content Include="assets\animate.css-master\source\sliding_entrances\slideInRight.css" />
+    <Content Include="assets\animate.css-master\source\sliding_entrances\slideInUp.css" />
+    <Content Include="assets\animate.css-master\source\sliding_exits\slideOutDown.css" />
+    <Content Include="assets\animate.css-master\source\sliding_exits\slideOutLeft.css" />
+    <Content Include="assets\animate.css-master\source\sliding_exits\slideOutRight.css" />
+    <Content Include="assets\animate.css-master\source\sliding_exits\slideOutUp.css" />
+    <Content Include="assets\animate.css-master\source\specials\hinge.css" />
+    <Content Include="assets\animate.css-master\source\specials\jackInTheBox.css" />
+    <Content Include="assets\animate.css-master\source\specials\rollIn.css" />
+    <Content Include="assets\animate.css-master\source\specials\rollOut.css" />
+    <Content Include="assets\animate.css-master\source\zooming_entrances\zoomIn.css" />
+    <Content Include="assets\animate.css-master\source\zooming_entrances\zoomInDown.css" />
+    <Content Include="assets\animate.css-master\source\zooming_entrances\zoomInLeft.css" />
+    <Content Include="assets\animate.css-master\source\zooming_entrances\zoomInRight.css" />
+    <Content Include="assets\animate.css-master\source\zooming_entrances\zoomInUp.css" />
+    <Content Include="assets\animate.css-master\source\zooming_exits\zoomOut.css" />
+    <Content Include="assets\animate.css-master\source\zooming_exits\zoomOutDown.css" />
+    <Content Include="assets\animate.css-master\source\zooming_exits\zoomOutLeft.css" />
+    <Content Include="assets\animate.css-master\source\zooming_exits\zoomOutRight.css" />
+    <Content Include="assets\animate.css-master\source\zooming_exits\zoomOutUp.css" />
+    <Content Include="assets\animate.css-master\source\_base.css" />
+    <Content Include="assets\bootstrap.min.css" />
+    <Content Include="assets\css\bootstrap.css" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\font-awesome.min.css" />
+    <Content Include="assets\css\magnific-popup.css" />
+    <Content Include="assets\css\slick.css" />
+    <Content Include="assets\css\style.css" />
+    <Content Include="assets\font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="assets\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="assets\font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="assets\images\ab.jpg" />
+    <Content Include="assets\images\about-us.jpg" />
+    <Content Include="assets\images\about.png" />
+    <Content Include="assets\images\abt.jpg" />
+    <Content Include="assets\images\B-Hero _ About Us.html" />
+    <Content Include="assets\images\B-Hero _ About Us_files\bootstrap.min.css" />
+    <Content Include="assets\images\B-Hero _ About Us_files\circle.css" />
+    <Content Include="assets\images\B-Hero _ About Us_files\font-awesome.min.css" />
+    <Content Include="assets\images\B-Hero _ About Us_files\lo4.png" />
+    <Content Include="assets\images\B-Hero _ About Us_files\magnific-popup.css" />
+    <Content Include="assets\images\B-Hero _ About Us_files\slick.css" />
+    <Content Include="assets\images\B-Hero _ About Us_files\style.css" />
+    <Content Include="assets\images\blog-img-1.jpg" />
+    <Content Include="assets\images\blog-img-2.jpg" />
+    <Content Include="assets\images\blog-img-3.jpg" />
+    <Content Include="assets\images\call-to-action-bg.jpg" />
+    <Content Include="assets\images\chairperson.jpg" />
+    <Content Include="assets\images\chief.jpg" />
+    <Content Include="assets\images\client-brand-1.jpg" />
+    <Content Include="assets\images\client-brand-2.jpg" />
+    <Content Include="assets\images\client-brand-3.jpg" />
+    <Content Include="assets\images\client-brand-4.jpg" />
+    <Content Include="assets\images\client-brand-5.jpg" />
+    <Content Include="assets\images\client-brand-6.jpg" />
+    <Content Include="assets\images\client.png" />
+    <Content Include="assets\images\counter-bg.jpg" />
+    <Content Include="assets\images\Director.jpg" />
+    <Content Include="assets\images\error-bg.jpg" />
+    <Content Include="assets\images\favicon.ico" />
+    <Content Include="assets\images\lo.jpg" />
+    <Content Include="assets\images\lo1.png" />
+    <Content Include="assets\images\lo2.png" />
+    <Content Include="assets\images\lo3.png" />
+    <Content Include="assets\images\lo4.png" />
+    <Content Include="assets\images\lo5.png" />
+    <Content Include="assets\images\lo6.png" />
+    <Content Include="assets\images\lo7.png" />
+    <Content Include="assets\images\lo8.png" />
+    <Content Include="assets\images\lo9.png" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\logoschool.png" />
+    <Content Include="assets\images\loogoo.png" />
+    <Content Include="assets\images\mission.jpg" />
+    <Content Include="assets\images\mission2.jpg" />
+    <Content Include="assets\images\newsletter-bg.jpg" />
+    <Content Include="assets\images\page-header-bg.jpg" />
+    <Content Include="assets\images\portfolio\img-1.jpg" />
+    <Content Include="assets\images\portfolio\img-2.jpg" />
+    <Content Include="assets\images\portfolio\img-3.jpg" />
+    <Content Include="assets\images\portfolio\img-4.jpg" />
+    <Content Include="assets\images\portfolio\img-5.jpg" />
+    <Content Include="assets\images\portfolio\img-6.jpg" />
+    <Content Include="assets\images\portfolio\img-7.jpg" />
+    <Content Include="assets\images\portfolio\img-8.jpg" />
+    <Content Include="assets\images\skill-bg.jpg" />
+    <Content Include="assets\images\sl1.PNG" />
+    <Content Include="assets\images\sl11.jpg" />
+    <Content Include="assets\images\sl2.jpg" />
+    <Content Include="assets\images\sl22.jpg" />
+    <Content Include="assets\images\sl3.jpg" />
+    <Content Include="assets\images\slider-img-1.jpg" />
+    <Content Include="assets\images\slider-img-2.jpg" />
+    <Content Include="assets\images\slider-img-3.jpg" />
+    <Content Include="assets\images\ss.PNG" />
+    <Content Include="assets\images\st1.jpg" />
+    <Content Include="assets\images\st2.jpg" />
+    <Content Include="assets\images\st3.png" />
+    <Content Include="assets\images\st4.jpg" />
+    <Content Include="assets\images\st5.jpg" />
+    <Content Include="assets\images\st6.jpg" />
+    <Content Include="assets\images\team-member.jpg" />
+    <Content Include="assets\images\testimonial-bg.jpg" />
+    <Content Include="assets\images\traveler-1.jpg" />
+    <Content Include="assets\images\traveler-2.jpg" />
+    <Content Include="assets\images\traveler-3.jpg" />
+    <Content Include="assets\images\vice-principal.jpg" />
+    <Content Include="assets\images\video-img.jpg" />
+    <Content Include="assets\js\app.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\circle.js" />
+    <Content Include="assets\js\counter.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\jquery.filterizr.min.js" />
+    <Content Include="assets\js\jquery.magnific-popup.min.js" />
+    <Content Include="assets\js\slick.min.js" />
+    <Content Include="assets\js\wow.min.js" />
+    <Content Include="font-awesome-4.7.0\css\font-awesome.css" />
+    <Content Include="font-awesome-4.7.0\css\font-awesome.min.css" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="font-awesome-4.7.0\HELP-US-OUT.txt" />
+    <Content Include="style.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Default2.aspx" />
+    <Content Include="About.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Dashboardd.aspx" />
+    <Content Include="FeeDue.aspx" />
+    <Content Include="PaidFee.aspx" />
+    <Content Include="StLogin.aspx" />
+    <Content Include="stSignUp.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection.cs" />
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Default2.aspx.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default2.aspx.designer.cs">
+      <DependentUpon>Default2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboardd.aspx.cs">
+      <DependentUpon>Dashboardd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboardd.aspx.designer.cs">
+      <DependentUpon>Dashboardd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FeeDue.aspx.cs">
+      <DependentUpon>FeeDue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FeeDue.aspx.designer.cs">
+      <DependentUpon>FeeDue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaidFee.aspx.cs">
+      <DependentUpon>PaidFee.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaidFee.aspx.designer.cs">
+      <DependentUpon>PaidFee.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StLogin.aspx.cs">
+      <DependentUpon>StLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StLogin.aspx.designer.cs">
+      <DependentUpon>StLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="stSignUp.aspx.cs">
+      <DependentUpon>stSignUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stSignUp.aspx.designer.cs">
+      <DependentUpon>stSignUp.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\.DS_Store" />
+    <Content Include="assets\css\.DS_Store" />
+    <Content Include="assets\fonts\.DS_Store" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="assets\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="assets\images\.DS_Store" />
+    <Content Include="assets\images\B-Hero _ About Us_files\app.js.download" />
+    <Content Include="assets\images\B-Hero _ About Us_files\bootstrap.min.js.download" />
+    <Content Include="assets\images\B-Hero _ About Us_files\circle.js.download" />
+    <Content Include="assets\images\B-Hero _ About Us_files\counter.js.download" />
+    <Content Include="assets\images\B-Hero _ About Us_files\css" />
+    <Content Include="assets\images\B-Hero _ About Us_files\css%281%29" />
+    <Content Include="assets\images\B-Hero _ About Us_files\custom.js.download" />
+    <Content Include="assets\images\B-Hero _ About Us_files\jquery.filterizr.min.js.download" />
+    <Content Include="assets\images\B-Hero _ About Us_files\jquery.magnific-popup.min.js.download" />
+    <Content Include="assets\images\B-Hero _ About Us_files\jquery.min.js.download" />
+    <Content Include="assets\images\B-Hero _ About Us_files\popper.min.js.download" />
+    <Content Include="assets\images\B-Hero _ About Us_files\slick.min.js.download" />
+    <Content Include="assets\js\.DS_Store" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="font-awesome-4.7.0\less\animated.less" />
+    <Content Include="font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="font-awesome-4.7.0\less\core.less" />
+    <Content Include="font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="font-awesome-4.7.0\less\icons.less" />
+    <Content Include="font-awesome-4.7.0\less\larger.less" />
+    <Content Include="font-awesome-4.7.0\less\list.less" />
+    <Content Include="font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="font-awesome-4.7.0\less\path.less" />
+    <Content Include="font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="font-awesome-4.7.0\less\variables.less" />
+    <Content Include="font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="MasterPage.master" />
+    <Content Include="assets\animate.css-master\.editorconfig" />
+    <Content Include="assets\animate.css-master\.prettierignore" />
+    <Content Include="assets\animate.css-master\.travis.yml" />
+    <Content Include="assets\animate.css-master\animate-config.json" />
+    <Content Include="assets\animate.css-master\bower.json" />
+    <Content Include="assets\animate.css-master\LICENSE" />
+    <Content Include="assets\animate.css-master\package.json" />
+    <Content Include="assets\animate.css-master\README.md" />
+    <Content Include="assets\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\font-awesome-4.7.0\fonts\FontAwesome.otf" />
+    <Content Include="assets\font-awesome-4.7.0\less\animated.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\bordered-pulled.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\core.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\fixed-width.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\font-awesome.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\icons.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\larger.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\list.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\mixins.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\path.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\rotated-flipped.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\screen-reader.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\stacked.less" />
+    <Content Include="assets\font-awesome-4.7.0\less\variables.less" />
+    <Content Include="assets\font-awesome-4.7.0\scss\font-awesome.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_animated.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_bordered-pulled.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_core.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_fixed-width.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_icons.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_larger.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_list.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_mixins.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_path.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_rotated-flipped.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_screen-reader.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_stacked.scss" />
+    <Content Include="assets\font-awesome-4.7.0\scss\_variables.scss" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49955</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:49955/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
